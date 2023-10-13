@@ -18,3 +18,13 @@ def fast_exponentiation_algorithm(a, n, m):
         return p
 
 print(f"p = {fast_exponentiation_algorithm(12, 233761, 355207)}")
+
+def euqlid(n, m):
+    while n!=0 and m !=0:
+        if(n>m):
+            n %= m
+        else:
+            m %= n
+    return n+m
+
+print(euqlid(233761, 355207))
